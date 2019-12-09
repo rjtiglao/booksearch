@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component, Fragment } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.css";
+import Nav from "./component/Nav/Nav";
+import Home from "./component/pages/Home";
+import SavedBooks from "./component/saved/SavedBooks";
+import SBooksState from "./component/context/SavedBooks/SBooksState";
+import GBooksState from "./component/context/GoogleBooks/GBooksState";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export class App extends Component {
+  render() {
+    return (
+      <Router>
+        <SBooksState>
+          <GBooksState>
+            <Nav />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/saved-books" component={SavedBooks} />
+              <Route component={Home} />
+            </Switch>
+          </GBooksState>
+        </SBooksState>
+      </Router>
+    );
+  }
 }
 
 export default App;
