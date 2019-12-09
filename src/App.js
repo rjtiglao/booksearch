@@ -1,7 +1,13 @@
 import React, { Component, Fragment } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link,
+  Redirect
+} from "react-router-dom";
 import "./App.css";
-import Nav from "./component/Nav/Nav";
+import NavBar from "./component/NavBar/NavBar";
 import Home from "./component/Views/Home/Home";
 import SavedBooks from "./component/saved/SavedBooks";
 import SBooksState from "./component/context/SavedBooks/SBooksState";
@@ -13,7 +19,7 @@ export class App extends Component {
       <Router>
         <SBooksState>
           <GBooksState>
-            <Nav />
+            <NavBar />
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/saved-books" component={SavedBooks} />
