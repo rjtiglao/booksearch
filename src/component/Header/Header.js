@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import GBooksContext from "../context/GoogleBooks/GBooksContext";
+import GBooksContext from "../Context/GoogleBooks/GBooksContext";
 import "./style.css";
 
 const Header = () => {

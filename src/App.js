@@ -9,9 +9,9 @@ import {
 import "./App.css";
 import NavBar from "./component/NavBar/NavBar";
 import Home from "./component/Views/Home/Home";
-import SavedBooks from "./component/saved/SavedBooks";
-import SBooksState from "./component/context/SavedBooks/SBooksState";
-import GBooksState from "./component/context/GoogleBooks/GBooksState";
+import SavedBooks from "./component/Saved/SavedBooks";
+import SBooksState from "./component/Context/SavedBooks/SBooksState";
+import GBooksState from "./component/Context/GoogleBooks/GBooksState";
 
 export class App extends Component {
   render() {

@@ -1,6 +1,6 @@
 import React, { Fragment, useContext } from "react";
 import "./style.css";
-import SBooksContext from "../context/SavedBooks/SBooksContext";
+import SBooksContext from "../Context/SavedBooks/SBooksContext";
 import { Link } from "react-router-dom";
 
 const BooksItems = ({ books }) => {

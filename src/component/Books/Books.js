@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import BooksItems from "./BooksItems";
-import GBooksContext from "../context/GoogleBooks/GBooksContext";
+import GBooksContext from "../Context/GoogleBooks/GBooksContext";
 
 const Books = () => {
   const gbooksContext = useContext(GBooksContext);
