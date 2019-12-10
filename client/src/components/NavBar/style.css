@@ -1,20 +1,20 @@
 nav {
-    background-color: rgb(255,143,111)
+  background-color: #e2be9c;
 }
 
 a {
-    text-decoration: none;
-    color: white
+  text-decoration: none;
+  color: white;
 }
- a:hover {
-    text-decoration: underline;
-    color: white
+a:hover {
+  text-decoration: underline;
+  color: white;
 }
 
 .navbar-brand {
-    font-size: 35px;
+  font-size: 35px;
 }
 
 .nav-item {
-    font-size: 25px;
+  font-size: 25px;
 }
