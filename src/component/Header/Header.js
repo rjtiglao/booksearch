@@ -8,6 +8,8 @@ const Header = () => {
   const { books, searchBooks, clearBooks } = gbooksContext;
   const onChange = e => setSearch(e.target.value);
 
+  
+
   const onSubmit = e => {
     e.preventDefault();
     if (search === "") {
